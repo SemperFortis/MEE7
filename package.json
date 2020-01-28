@@ -1,0 +1,27 @@
+{
+    "name": "mee7",
+    "version": "1.0.0",
+    "description": "Earn xp to gain levels by chatting",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "production": "node index.js"
+    },
+    "keywords": [
+        "level",
+        "rank",
+        "experience",
+        "xp"
+    ],
+    "author": "Jason",
+    "license": "MIT",
+    "dependencies": {
+        "canvas": "^2.6.1",
+        "discord.js": "github:discordjs/discord.js",
+        "dotenv": "^8.2.0",
+        "mongodb": "^3.4.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
