@@ -9,3 +9,5 @@ Want to contribute? Great, we love that! Please take your time on [opening a new
 ## Contributrs
 
 You can see all contributors and their GitHub profiles [here](https://github.com/SemperFortis/MEE7/graphs/contributors).
+
+[![DeepScan grade](https://deepscan.io/api/teams/5277/projects/9273/branches/118466/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5277&pid=9273&bid=118466)
