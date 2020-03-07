@@ -26,8 +26,8 @@ module.exports.notFound = (msg, client, player) => {
             }
         };
         let found = false;
-        for (const entry of server[0].users.length) {
-            if (entry[0].id == player.id) {
+        for (const entry of server[0].users) {
+            if (entry.id == player.id) {
                 found = true;
                 break;
             }
@@ -45,7 +45,7 @@ module.exports.notFound = (msg, client, player) => {
             return;
         }
     });
-}
+};
 
 /**
  * @function xp
@@ -83,12 +83,12 @@ module.exports.xp = (msg, client, player) => {
             }
         });
     });
-}
+};
 
 /**
  * @function checkPerms
  * 
  */
 module.exports.checkPerms = () => {
-
-}
+    //
+};
