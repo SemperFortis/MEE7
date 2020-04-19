@@ -7,7 +7,7 @@ module.exports.run = (Discord, msg, client, args, db, utils) => {
         let user = msg.guild.member((msg.mentions.users.first() || args[0])) || msg.guild.members.cache.find(u => u.user.tag === args.join(" "));
         if (!user) user = msg.author;
         if (user.user) user = user.user;
-        server[0].users.map(async (x) => {
+        server[0].users.map(async (x, index) => {
             // Found member we are looking for
             if (x.id == user.id) {
                 await x;
@@ -81,6 +81,9 @@ module.exports.run = (Discord, msg, client, args, db, utils) => {
                 // User status
                 drawStatus(ctx, user);
                 return msg.channel.send(new Discord.MessageAttachment(canvas.toBuffer(), "rank.webp"));
+            }
+            else if (index + 1 == server[0].users.length) {
+                return msg.channel.send("That user is not ranked yet.");
             }
         });
     });
